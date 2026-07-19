@@ -1,0 +1,11 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="630" fill="#0B1F33"/>
+<path d="M70 520 C270 390 390 500 560 365 C750 214 850 286 1130 135" stroke="#16B95D" stroke-width="3" fill="none" opacity=".8"/>
+<path d="M0 610 C220 530 340 560 520 482 C720 395 880 430 1200 315" stroke="#0071CE" stroke-width="2" fill="none" opacity=".45"/>
+<g stroke="#D6F6FF" stroke-width="2" opacity=".55" fill="none"><path d="M610 450V300h45v150M670 450V210h60v240M760 450V140l20 310M760 140l-20 310M810 450V270h58v180M890 450V190h90v260M1000 450V310h70v140"/><path d="M580 450h520"/></g>
+<text x="76" y="112" fill="#fff" font-family="Arial, sans-serif" font-size="42" font-weight="700">THINKナゴヤ</text>
+<text x="78" y="260" fill="#fff" font-family="serif" font-size="74" font-weight="700">ナゴヤの未来に、</text>
+<text x="78" y="350" fill="#fff" font-family="serif" font-size="74" font-weight="700">構想力を。</text>
+<text x="82" y="422" fill="#DCEAF0" font-family="Arial, sans-serif" font-size="25">都市経営・まちづくり・産業・文化・教育の視点から、</text>
+<text x="82" y="462" fill="#DCEAF0" font-family="Arial, sans-serif" font-size="25">中長期の都市像を考え、提言する有志の会。</text>
+</svg>

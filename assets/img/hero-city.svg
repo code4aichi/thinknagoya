@@ -1,0 +1,36 @@
+<svg width="1200" height="620" viewBox="0 0 1200 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22C767"/><stop offset="1" stop-color="#0071CE"/></linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08A6E8"/><stop offset="1" stop-color="#0071CE"/></linearGradient>
+  <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop stop-color="#22C767" stop-opacity=".65"/><stop offset="1" stop-color="#22C767" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="620" fill="transparent"/>
+<g opacity="0.16" stroke="#70DCEB" stroke-width="1">
+  <path d="M75 508 C240 420 320 548 483 442 C650 333 794 384 1110 238"/>
+  <path d="M20 410 C162 362 278 392 394 317 C521 234 661 272 835 190 C970 127 1068 145 1184 120"/>
+  <path d="M0 545 H1200"/><path d="M0 500 H1200"/><path d="M0 455 H1200"/>
+  <path d="M116 210 V620"/><path d="M242 130 V620"/><path d="M381 85 V620"/><path d="M521 40 V620"/><path d="M706 40 V620"/><path d="M846 80 V620"/><path d="M1016 80 V620"/>
+  <circle cx="718" cy="172" r="128"/><circle cx="718" cy="172" r="180"/><circle cx="718" cy="172" r="242"/>
+</g>
+<g opacity="0.65" stroke="url(#gold)" stroke-width="1.8">
+  <path d="M20 568 C230 452 337 538 504 398 C681 250 796 316 1178 137"/>
+  <path d="M180 612 C305 510 413 526 535 430 C661 332 821 299 1180 260"/>
+  <circle cx="504" cy="398" r="5" fill="#16B95D"/><circle cx="821" cy="299" r="5" fill="#16B95D"/><circle cx="1035" cy="211" r="4" fill="#16B95D"/>
+</g>
+<g opacity="0.18" fill="url(#glow)"><circle cx="720" cy="175" r="255"/></g>
+<g stroke="#D6F6FF" stroke-width="2" opacity="0.82" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Nagoya castle inspired line art -->
+  <path d="M255 387h214"/><path d="M284 358h156"/><path d="M305 329h114"/><path d="M329 300h68"/>
+  <path d="M300 387v-51h126v51"/><path d="M321 358v-52h84v52"/><path d="M345 329v-52h36v52"/>
+  <path d="M280 336l83-86 86 86"/><path d="M303 306l60-66 62 66"/><path d="M324 278l38-48 41 48"/>
+  <path d="M262 386l27-29h151l29 29"/><path d="M308 328l55-35 55 35"/><path d="M332 298l30-22 34 22"/>
+  <path d="M356 230l8-24 8 24"/>
+  <!-- skyline -->
+  <path d="M520 390V248h34v142M560 390V210h42v180M608 390V277h46v113M661 390V188h56v202M729 390V84M729 84l16 306M729 84l-16 306M749 390V246h58v144M817 390V155h76v235M901 390V218h44v172M957 390V120h82v270M1049 390V196h42v194M1104 390V257h50v133"/>
+  <path d="M514 390h650"/>
+</g>
+<g stroke="#08A6E8" opacity="0.23" stroke-width="1.4"><path d="M0 610 C180 545 285 596 450 520 C610 446 760 500 1200 365"/><path d="M620 600 C760 520 935 505 1200 436"/></g>
+<g fill="#E9FFF4" opacity="0.7">
+  <circle cx="95" cy="132" r="2"/><circle cx="198" cy="94" r="1.7"/><circle cx="458" cy="86" r="2"/><circle cx="632" cy="105" r="1.5"/><circle cx="1015" cy="73" r="1.7"/><circle cx="1114" cy="313" r="1.7"/>
+</g>
+</svg>
