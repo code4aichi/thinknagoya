@@ -216,3 +216,123 @@ body{background:linear-gradient(180deg,#F5FBFF 0%,#F4FAF8 48%,#EEF9F1 100%)}
     min-height:620px;
   }
 }
+
+
+/* Official LINE registration buttons (2026-07-28) */
+.hero__desktop-artwork{
+  position:relative;
+}
+.line-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  min-height:54px;
+  padding:14px 24px;
+  border-radius:999px;
+  color:#fff;
+  background:linear-gradient(135deg,#0071CE 0%,#00B84F 100%);
+  box-shadow:0 16px 36px rgba(0,184,79,.25), inset 0 1px 0 rgba(255,255,255,.18);
+  font-weight:900;
+  letter-spacing:.04em;
+  line-height:1;
+  transition:transform .25s ease, box-shadow .25s ease, filter .25s ease;
+  white-space:nowrap;
+}
+.line-button:hover{
+  transform:translateY(-2px);
+  filter:saturate(1.08);
+  box-shadow:0 20px 44px rgba(0,184,79,.32), inset 0 1px 0 rgba(255,255,255,.2);
+}
+.line-button__icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:42px;
+  height:26px;
+  border-radius:7px;
+  background:#fff;
+  color:#00B84F;
+  font-size:10px;
+  font-family:Arial, sans-serif;
+  font-weight:900;
+  letter-spacing:0;
+}
+.line-button--hero{
+  position:absolute;
+  left:5.2%;
+  bottom:13.8%;
+  z-index:3;
+  font-size:15px;
+  min-width:238px;
+}
+.line-button--mobile{
+  margin-top:28px;
+  min-width:240px;
+}
+.line-button--footer{
+  margin-top:28px;
+  min-width:260px;
+}
+@media (max-width:1180px){
+  .line-button--hero{
+    bottom:9%;
+    min-height:48px;
+    padding:12px 20px;
+    font-size:13px;
+  }
+  .line-button__icon{
+    width:38px;
+    height:24px;
+  }
+}
+@media (max-width:820px){
+  .line-button--hero{
+    display:none;
+  }
+  .line-button--mobile{
+    display:inline-flex;
+  }
+}
+@media (max-width:560px){
+  .line-button--mobile,
+  .line-button--footer{
+    width:100%;
+    min-width:0;
+  }
+}
+
+
+/* Footer official LINE description */
+.footer-line-info{
+  margin-top:30px;
+  text-align:center;
+  max-width:520px;
+  margin-inline:auto;
+}
+.footer-line-info h3{
+  margin:0 0 10px;
+  color:#fff;
+  font-size:clamp(20px,2.2vw,28px);
+  line-height:1.35;
+  letter-spacing:.06em;
+  font-weight:900;
+}
+.footer-line-info p{
+  margin:0;
+  color:#DCEAF0;
+  font-size:15px;
+  line-height:1.8;
+  font-weight:700;
+}
+.line-button--footer{
+  margin-top:18px;
+}
+@media (max-width:560px){
+  .footer-line-info{
+    margin-top:24px;
+  }
+  .footer-line-info p{
+    font-size:14px;
+  }
+}
