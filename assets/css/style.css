@@ -794,3 +794,180 @@ body{background:linear-gradient(180deg,#F5FBFF 0%,#F4FAF8 48%,#EEF9F1 100%)}
     min-width:0;
   }
 }
+
+
+/* YouTube embed inside download panel */
+.youtube-viewer--in-panel{
+  width:100%;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid rgba(0,113,206,.18);
+  box-shadow:0 16px 40px rgba(0,63,115,.10);
+  background:#071828;
+  aspect-ratio:16 / 9;
+}
+.youtube-viewer--in-panel iframe{
+  width:100%;
+  height:100%;
+  border:0;
+  display:block;
+}
+@media (max-width:560px){
+  .youtube-viewer--in-panel{
+    border-radius:14px;
+  }
+}
+
+
+/* YouTube fallback link */
+.youtube-fallback{
+  margin: 10px 0 26px;
+  text-align: right;
+  color: #4E5E6F;
+  font-size: 14px;
+  font-weight: 700;
+}
+.youtube-fallback a{
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+@media (max-width: 560px){
+  .youtube-fallback{
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* YouTube stable link card: iframe removed to avoid YouTube Error 153 */
+.youtube-viewer--in-panel,
+.youtube-fallback{
+  display:none !important;
+}
+.youtube-card--in-panel{
+  position:relative;
+  display:block;
+  width:100%;
+  aspect-ratio:16/9;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid rgba(0,113,206,.18);
+  box-shadow:0 16px 40px rgba(0,63,115,.10);
+  background:linear-gradient(135deg,#08243b,#0b725c);
+}
+.youtube-card--in-panel img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  filter:saturate(1.05) contrast(.96);
+}
+.youtube-card--in-panel::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(7,24,40,.72),rgba(7,24,40,.24) 52%,rgba(7,24,40,.52));
+  z-index:1;
+}
+.youtube-card__overlay{
+  position:absolute;
+  inset:0;
+  z-index:2;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  color:#fff;
+  font-weight:900;
+  letter-spacing:.06em;
+  text-align:center;
+}
+.youtube-card__play{
+  width:82px;
+  height:82px;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--blue),var(--green));
+  box-shadow:0 18px 42px rgba(0,63,115,.32);
+  position:relative;
+}
+.youtube-card__play::after{
+  content:"";
+  position:absolute;
+  left:33px;
+  top:25px;
+  width:0;
+  height:0;
+  border-top:16px solid transparent;
+  border-bottom:16px solid transparent;
+  border-left:24px solid #fff;
+}
+.youtube-card__label{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:46px;
+  padding:0 22px;
+  border-radius:999px;
+  background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.34);
+  backdrop-filter:blur(8px);
+}
+.youtube-card--in-panel:hover .youtube-card__play{
+  transform:scale(1.05);
+}
+@media (max-width:560px){
+  .youtube-card--in-panel{
+    border-radius:14px;
+  }
+  .youtube-card__play{
+    width:64px;
+    height:64px;
+  }
+  .youtube-card__play::after{
+    left:26px;
+    top:20px;
+    border-top-width:12px;
+    border-bottom-width:12px;
+    border-left-width:19px;
+  }
+  .youtube-card__label{
+    min-height:40px;
+    padding:0 16px;
+    font-size:13px;
+  }
+}
+
+
+/* YouTube compact embed (re-enabled by request) */
+.youtube-viewer--compact{
+  display:block !important;
+  width:min(100%, 760px);
+  margin:0 auto;
+  aspect-ratio:16 / 9;
+  align-self:center;
+}
+.youtube-viewer--compact iframe{
+  width:100%;
+  height:100%;
+  display:block;
+}
+.youtube-fallback{
+  display:block !important;
+  width:min(100%, 760px);
+  margin:8px auto 4px;
+  text-align:right;
+}
+.youtube-card--in-panel{
+  display:none !important;
+}
+@media (max-width:560px){
+  .youtube-viewer--compact,
+  .youtube-fallback{
+    width:100%;
+  }
+  .youtube-fallback{
+    text-align:left;
+  }
+}
