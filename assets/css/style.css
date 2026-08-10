@@ -971,3 +971,102 @@ body{background:linear-gradient(180deg,#F5FBFF 0%,#F4FAF8 48%,#EEF9F1 100%)}
     text-align:left;
   }
 }
+
+
+/* Event information section */
+.event-section{
+  padding: 34px 0 64px;
+}
+.event-panel{
+  border-radius: 28px;
+  padding: clamp(24px, 3vw, 38px);
+  background: linear-gradient(135deg, rgba(255,255,255,.9), rgba(234,249,242,.72) 54%, rgba(233,246,255,.86));
+  border: 1px solid rgba(0,113,206,.16);
+  box-shadow: 0 18px 54px rgba(0,63,115,.08);
+}
+.event-panel__head{
+  margin-bottom: 22px;
+}
+.event-panel__head h2{
+  margin: 0 0 10px;
+  color: var(--navy);
+  font-family: var(--font-ja);
+  font-size: clamp(30px, 3.5vw, 46px);
+  line-height: 1.35;
+  letter-spacing: .06em;
+}
+.event-panel__head p:not(.section-kicker){
+  margin: 0;
+  color: #4E5E6F;
+  font-weight: 700;
+  line-height: 1.8;
+}
+.event-banner{
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  border: 1px solid rgba(0,113,206,.18);
+  background: #fff;
+  box-shadow: 0 18px 48px rgba(0,63,115,.12);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.event-banner::after{
+  content: "Peatixで詳細を見る →";
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 20px;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: .04em;
+  background: linear-gradient(135deg, var(--blue), var(--green));
+  box-shadow: 0 14px 34px rgba(0,113,206,.22);
+}
+.event-banner:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 26px 68px rgba(0,63,115,.16);
+  border-color: rgba(32,184,80,.35);
+}
+.event-banner img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 820px){
+  .event-section{
+    padding: 24px 0 54px;
+  }
+  .event-panel{
+    border-radius: 22px;
+    padding: 22px;
+  }
+  .event-banner{
+    border-radius: 18px;
+  }
+  .event-banner::after{
+    right: 12px;
+    bottom: 12px;
+    min-height: 40px;
+    padding: 0 14px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px){
+  .event-panel{
+    padding: 18px;
+  }
+  .event-panel__head{
+    margin-bottom: 16px;
+  }
+  .event-banner::after{
+    position: static;
+    width: calc(100% - 24px);
+    margin: 12px;
+  }
+}
