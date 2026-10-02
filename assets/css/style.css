@@ -1573,3 +1573,117 @@ body{background:linear-gradient(180deg,#F5FBFF 0%,#F4FAF8 48%,#EEF9F1 100%)}
     min-width:0;
   }
 }
+
+
+/* Upcoming event */
+.event-upcoming-block{
+  margin:24px 0 28px;
+  padding:0 0 28px;
+  border-bottom:1px solid rgba(0,113,206,.12);
+}
+.event-upcoming-block__head{
+  margin-bottom:18px;
+}
+.event-upcoming-block__head .section-kicker{
+  margin-bottom:8px;
+}
+.event-upcoming-block__head p:last-child{
+  margin:0;
+  color:#405569;
+  font-weight:700;
+  line-height:1.75;
+}
+.event-upcoming-banner{
+  display:block;
+  overflow:hidden;
+  border-radius:26px;
+  border:1px solid rgba(0,113,206,.16);
+  background:#fff;
+  box-shadow:0 18px 48px rgba(0,63,115,.08);
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.event-upcoming-banner:hover{
+  transform:translateY(-3px);
+  box-shadow:0 24px 62px rgba(0,63,115,.13);
+  border-color:rgba(32,184,80,.32);
+}
+.event-upcoming-banner img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.event-upcoming-actions{
+  display:flex;
+  justify-content:flex-end;
+  margin-top:18px;
+}
+@media(max-width:560px){
+  .event-upcoming-block{
+    margin:18px 0 24px;
+    padding-bottom:22px;
+  }
+  .event-upcoming-banner{
+    border-radius:20px;
+  }
+  .event-upcoming-actions{
+    justify-content:stretch;
+  }
+  .event-upcoming-actions .btn{
+    width:100%;
+    min-width:0;
+  }
+}
+.event-report-block{
+  margin-top:8px;
+  padding-top:26px;
+  border-top:1px solid rgba(0,113,206,.12);
+}
+.event-report-block__head{
+  margin-bottom:18px;
+}
+.event-report-block__head .section-kicker{
+  margin-bottom:8px;
+}
+.event-report-block__head p:last-child{
+  margin:0;
+  color:#405569;
+  font-weight:700;
+  line-height:1.75;
+}
+@media(max-width:900px){
+  .event-upcoming-card{
+    grid-template-columns:120px 1fr;
+  }
+  .event-upcoming-card__cta{
+    grid-column:1 / -1;
+    width:100%;
+  }
+  .event-upcoming-card__date{
+    min-height:118px;
+  }
+  .event-upcoming-card__date strong{
+    font-size:34px;
+  }
+}
+@media(max-width:560px){
+  .event-upcoming-card{
+    grid-template-columns:1fr;
+    gap:16px;
+    padding:18px;
+    margin:18px 0 24px;
+    border-radius:20px;
+  }
+  .event-upcoming-card__date{
+    min-height:96px;
+    border-radius:18px;
+  }
+  .event-upcoming-card__date strong{
+    font-size:32px;
+  }
+  .event-upcoming-card__body h3{
+    font-size:23px;
+  }
+  .event-report-block{
+    padding-top:22px;
+  }
+}
