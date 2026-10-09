@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://thinknagoya.org/sitemap.xml
+Disallow: /members-minutes.html
+Disallow: /assets/docs/minutes/

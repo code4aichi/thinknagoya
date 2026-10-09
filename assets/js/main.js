@@ -18,26 +18,36 @@ if (navToggle && nav) {
 }
 
 const revealTargets = document.querySelectorAll('.reveal');
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('is-visible');
-      revealObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.16 });
+const showAllReveals = () => {
+  revealTargets.forEach((target) => target.classList.add('is-visible'));
+};
 
-revealTargets.forEach((target, index) => {
-  target.style.transitionDelay = `${Math.min(index % 4, 3) * 70}ms`;
-  revealObserver.observe(target);
-});
+if ('IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.06, rootMargin: '0px 0px -4% 0px' });
+
+  revealTargets.forEach((target, index) => {
+    target.style.transitionDelay = `${Math.min(index % 4, 3) * 70}ms`;
+    revealObserver.observe(target);
+  });
+
+  // Safety net: avoid blank sections if a viewport breakpoint prevents observer firing.
+  window.setTimeout(showAllReveals, 900);
+} else {
+  showAllReveals();
+}
 
 window.addEventListener('scroll', () => {
   const header = document.querySelector('.site-header');
   if (!header) return;
   header.style.boxShadow = window.scrollY > 24 ? '0 18px 46px rgba(0,0,0,.18)' : 'none';
 }, { passive: true });
-
 
 const memberToggle = document.querySelector('.member-accordion__toggle');
 const memberList = document.querySelector('#member-list');
