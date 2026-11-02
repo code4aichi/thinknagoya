@@ -18,4 +18,5 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url><loc>https://thinknagoya.org/open-meeting-vol2-map.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
 </urlset>
